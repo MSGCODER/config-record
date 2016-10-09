@@ -1,0 +1,12 @@
+version: '2'
+services:
+  rabbitmq:
+    image: aiztone.tech/docker/rabbitmq:3.6.5-management
+    hostname: lenn-rabbitmq
+    ports:
+     - "15672:15672"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "YOUSHENBUBAI"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
